@@ -12,5 +12,5 @@ Dependencies:
 - crispy-bootstrap4
 
 Urls:
-log-in/ - login page.
-log-out/ - logout.
+- log-in/ - login page.
+- log-out/ - logout.
