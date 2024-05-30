@@ -1,5 +1,5 @@
 {% extends "accounts/base.html" %}
-{% block page_title %}Login - Django Accounts App{% endblock page_title %}
+{% block page_title %}Update - Django Accounts App{% endblock page_title %}
 {% block main_content %}
 {% load crispy_forms_tags %}
 <div class="container">
@@ -10,8 +10,8 @@
                     <form method="POST">
                         {% csrf_token %}
                         {{form|crispy}}
-                        <input class="btn btn-primary" type="submit" value="Login">
-                        <a href="{% url 'accounts:signup' %}" class="btn btn-secondary">Resgister</a>
+                        <input class="btn btn-primary" type="submit" value="Update">
+                        <a href="{% url 'accounts:success' %}" class="btn btn-danger">Cancel</a>
                       </form>
                 </div>
             </div>
