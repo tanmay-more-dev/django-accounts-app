@@ -1,4 +1,4 @@
-# django-accounts-app
+# DJANGO ACCOUNTS APP
 A basic accounts app with login and logout functionlity wired up using django's default stuff.
 
 Steps:
