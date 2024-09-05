@@ -34,7 +34,7 @@ class SignUpView(CreateView):
     success_url = reverse_lazy("accounts:login")
 
 
-class UserUpdateView(UpdateView):
+class UserUpdateView(LoginRequiredMixin, UpdateView):
     """Modifies User details."""
     model = User
     fields = ('email', 'first_name', 'last_name')
